@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Full-Page PDF Viewer</title>
+        <style>
+            /* Reset margins and padding */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            /* Full-screen settings for html and body */
+            html, body {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            /* Responsive iframe */
+            iframe {
+                width: 100%;
+                height: 100vh;
+                border: none;
+            }
+    
+            /* Optional: Add padding on small screens */
+            @media (max-width: 600px) {
+                iframe {
+                    height: calc(100vh - 20px);
+                    width: calc(100% - 20px);
+                    margin: 10px;
+                }
+            }
+        </style>
+    </head>
+<body>
+    <!-- Embedding PDF.js viewer -->
+    <iframe src="Diploma-Blocckhain.png"></iframe>
+</body>
+</html>
